@@ -6,8 +6,7 @@
   "scripts": {
     "build:prod": "rimraf dist && cross-env NODE_ENV=production webpack",
     "serve:dev": "cross-env NODE_ENV=development webpack-dev-server --open",
-    "serve:prod": "npm run build:prod && node scripts/serve",
-    "start": "node scripts/serve",
+    "start": "serve dist --single",
     "lint": "standard --verbose | snazzy",
     "test": "npm run lint && echo 'no tests specified'"
   },
@@ -24,6 +23,7 @@
     "html-webpack-plugin": "^2.21.0",
     "node-static": "^0.7.9",
     "rimraf": "^2.5.2",
+    "serve": "^2.4.0",
     "snazzy": "^4.0.0",
     "standard": "^7.1.2",
     "webpack": "2.2.0-rc.4",
