@@ -1,17 +1,17 @@
 projectName: <%= projectName %>
 template:
-  url: https://github.com/trainyard/template-basic
-  name: template-basic
+  url: https://github.com/haroenv/template-webpack
+  name: template-webpack
 generators:
   page:
     src: .generators/page.js
-    target: pages
+    target: src/pages
   element:
     src: .generators/element.js
-    target: elements
+    target: src/elements
   model:
     src: .generators/model.js
-    target: models
+    target: src/models
 required:
   - _choo.yaml
   - _gitignore
