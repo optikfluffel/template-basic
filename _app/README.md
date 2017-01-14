@@ -46,8 +46,10 @@ $ npm run
 ```
 
 Here is complete list the the commands and their function
-- start - start dev server at [localhost:8080](https://localhost:8080)
+
+- serve:dev - start dev server at [localhost:8080](https://localhost:8080)
 - build:prod - builds your project to deploy to a server
+- start - a production server with SSR
 - test - runs unit tests, for now it will just run linting.
 - lint - runs standard against your code
 
