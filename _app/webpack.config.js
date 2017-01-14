@@ -10,7 +10,7 @@ var TARGET_ENV = process.env.NODE_ENV
 // common webpack config
 var common = {
   output: {
-    path: path.resolve(__dirname, 'dist/'),
+    path: path.resolve(__dirname, 'build/'),
     filename: '[hash].js'
   },
   resolve: {
@@ -73,6 +73,6 @@ if (TARGET_ENV === 'development') {
   console.log('Booting webpack development server...')
   module.exports = merge(common, development)
 } else if (TARGET_ENV === 'production') {
-  console.log('Building production /dist folder...')
+  console.log('Building production /build folder...')
   module.exports = merge(common, production)
 }
