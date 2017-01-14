@@ -55,3 +55,14 @@ Here is complete list the the commands and their function
 
 So for example you can run `npm serve:dev` to start a dev server. You can now see your
 app running at [localhost:8080](https://localhost:8080)
+
+## Deploying
+
+Deploying via this method is pretty straight-forward
+
+service|how
+---|---
+[now.sh](https://now.sh)|`npm run build:prod && now`
+[surge.sh](https://surge.sh)|`mv src/index.html src/200.html && npm run build:prod && surge build`
+[github pages](https://pages.github.io)|`mv src/index.html src/404.html && npm run build:prod && echo "push the build directory to gh-pages"`
+other|`npm run build:prod && npm run start`
