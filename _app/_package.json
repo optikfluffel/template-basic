@@ -32,7 +32,8 @@
   },
   "standard": {
     "ignore": [
-      "scripts"
+      "scripts",
+      "build"
     ]
   }
 }
