@@ -1,11 +1,7 @@
-// Element: <%= name %> 
+// Element: <%= name %>
 //
 // We can use bel instead of choo/html to keep elements modular
 // and allow them to easily move outisde of the app.
-const html = require('bel')
+import * as html from 'bel'
 
-function <%= name %> () {
-  return html`<div> <%= name %> </div>`
-}
-
-module.exports = <%= name %>
+export default () => html`<div> <%= name %> </div>`

@@ -1,6 +1,6 @@
-# <%= projectName %> [![built with choo v3](https://img.shields.io/badge/built%20with%20choo-v3-ffc3e4.svg?style=flat-square)](https://github.com/yoshuawuyts/choo)
+# <%= projectName %> [![built with choo v4](https://img.shields.io/badge/built%20with%20choo-v4-ffc3e4.svg?style=flat-square)](https://github.com/yoshuawuyts/choo)
 
-Choo-cli created a directory structure that [we've found to be optimal](https://github.com/yoshuawuyts/choo-handbook/blob/master/guides/designing-for-reusability.md) for slim
+Choo-cli created a directory structure that [we've found to be optimal](https://github.com/yoshuawuyts/choo-handbook/blob/master/content/guides-designing-for-reusability.md) for slim
 applications and reusability.
 
 ```txt
@@ -47,9 +47,9 @@ $ npm run
 
 Here is complete list the the commands and their function
 - start - start dev server at [localhost:8080](https://localhost:8080)
-- build - builds your project to deploy to a server
+- build:prod - builds your project to deploy to a server
 - test - runs unit tests, for now it will just run linting.
-- lint - runs eslint against your code
+- lint - runs standard against your code
 
 So for example you can run `npm start` to start a dev server. You can now see your
 app running at [localhost:8080](https://localhost:8080)

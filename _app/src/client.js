@@ -1,10 +1,14 @@
-const choo = require('choo')
+import choo from 'choo'
+
+import model from './models/app'
+import home from './pages/home'
+
 const app = choo()
 
-app.model(require('../models/app'))
+app.model(model)
 
-app.router((route) => [
-  route('/', require('../pages/home'))
+app.router([
+  [ '/', home ]
 ])
 
 const tree = app.start()

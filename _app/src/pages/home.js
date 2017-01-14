@@ -1,13 +1,14 @@
-const html = require('choo/html')
+import html from 'choo/html'
 
-module.exports = (state, prev, send) => html`
+export default (state, prev, send) => html`
   <main>
     <h1>Hello, World!</h1>
+    <a href="test">test</a>
     <p>If you are seeing this, then the generator works!</p>
     <h2>Demo</h2>
     <h3>${state.title}</h3>
     <input
       type="text"
-      oninput=${(e) => send('update', { value: e.target.value })} />
+      oninput=${(e) => send('updateTitle', { value: e.target.value })} />
   </main>
 `

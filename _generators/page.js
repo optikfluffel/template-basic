@@ -1,13 +1,9 @@
 /* Page: <%= name %> */
 
-const html = require('choo/html')
+import html from 'choo/html'
 
-function <%= name %> (state, prev, send) {
-  return html`
-    <main>
-      <h1><%= name %></h1>
-    </main>
-  `
-}
-
-module.exports = <%= name %>
+export default (state, prev, send) => html`
+  <main>
+    <h1><%= name %></h1>
+  </main>
+`

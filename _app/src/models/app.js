@@ -1,11 +1,13 @@
-module.exports = {
+export default {
   state: {
     /* initial values of state inside the model */
-    // title: 'Set the title'
+    title: 'Set the title'
   },
   reducers: {
     /* synchronous operations that modify state. Triggered by actions. Signature of (data, state). */
-    update: (data, state) => ({ title: data.value })
+    updateTitle: (data, state) => ({
+      title: state.value
+    })
   },
   effects: {
     // asynchronous operations that don't modify state directly.

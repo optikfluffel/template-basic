@@ -1,4 +1,4 @@
-const <%= name %> = {
+export default {
   namespace: '<%= name %>',
   state: {
     /* initial values of state inside the model */
@@ -27,5 +27,3 @@ const <%= name %> = {
     */
   ]
 }
-
-module.exports = <%= name %>
