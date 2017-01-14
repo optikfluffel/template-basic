@@ -17,7 +17,7 @@ export default {
     }
     */
   },
-  subscriptions: [
+  subscriptions: {
     // asynchronous read-only operations that don't modify state directly.
     // Can call actions. Signature of (send, done).
     /*
@@ -25,5 +25,5 @@ export default {
       // do stuff
     }
     */
-  ]
+  }
 }
