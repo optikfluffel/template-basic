@@ -4,9 +4,9 @@
   "description": "Created with choo-cli",
   "license": "MIT",
   "scripts": {
-    "build:prod": "rimraf dist && cross-env NODE_ENV=production webpack",
+    "build:prod": "rimraf build && cross-env NODE_ENV=production webpack",
     "serve:dev": "cross-env NODE_ENV=development webpack-dev-server --open",
-    "start": "serve dist --single",
+    "start": "serve build --single",
     "lint": "standard --verbose | snazzy",
     "test": "npm run lint && echo 'no tests specified'"
   },
